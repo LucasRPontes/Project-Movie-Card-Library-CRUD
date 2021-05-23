@@ -11,6 +11,7 @@ class MovieCard extends React.Component {
       rating,
       imagePath,
       genre,
+      id,
     } } = this.props;
 
     return (
@@ -21,7 +22,7 @@ class MovieCard extends React.Component {
         <p className="movie-card-storyline">{ storyline }</p>
         <p className="rating movie-card-rating">{ rating }</p>
         <p className="rating movie-card-rating">{ genre }</p>
-        <Link to="/movies/:id"> VER DETALHES </Link>
+        <Link to={ `/movies/${id}` }> VER DETALHES </Link>
       </div>
     );
   }

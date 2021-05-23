@@ -27,7 +27,6 @@ class MovieDetails extends Component {
       },
     } = this.props;
     const fetchMovie = await movieAPI.getMovie(id);
-    console.log(fetchMovie);
     this.setState({ movie: fetchMovie });
     this.setState({ loading: false });
   }
